@@ -9,19 +9,20 @@ const Header = () => {
      const [isActive, setIsActive] = useState(0);
      return (
           <div className="bg-[#10355F] rounded-b-3xl py-3 text-white backdrop-blur-3xl">
-               <div className="flex justify-between max-w-[1500] px-15 mx-auto py-2">
+               <div className="flex justify-between gap-3 max-w-[1500] lg:px-15 px-3 mx-auto py-2">
                     <Image
                          src="logo.svg"
                          alt="site logo"
+                         className="w-30 xl:w-50"
                          height={200}
                          width={200}
                     />
-                    <nav className="flex items-center gap-3 border border-white/10 rounded-lg px-2 bg-white/5">
+                    <nav className="hidden lg:flex items-center lg:gap-2 xl:gap-3 border border-white/10 rounded-lg px-2 bg-white/5">
                          <Link
                               className={
                                    isActive === 0
-                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm"
-                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm"
+                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
+                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
                               }
                               href={"/"}
                               onClick={() => setIsActive(0)}
@@ -31,8 +32,8 @@ const Header = () => {
                          <Link
                               className={
                                    isActive === 1
-                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm"
-                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm"
+                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
+                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
                               }
                               onClick={() => setIsActive(1)}
                               href={"/pages"}
@@ -42,8 +43,8 @@ const Header = () => {
                          <Link
                               className={
                                    isActive === 2
-                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm"
-                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm"
+                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
+                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
                               }
                               onClick={() => setIsActive(2)}
                               href={"/services"}
@@ -53,8 +54,8 @@ const Header = () => {
                          <Link
                               className={
                                    isActive === 3
-                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm"
-                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm"
+                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
+                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
                               }
                               onClick={() => setIsActive(3)}
                               href={"/case-studies"}
@@ -64,8 +65,8 @@ const Header = () => {
                          <Link
                               className={
                                    isActive === 4
-                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm"
-                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm"
+                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
+                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
                               }
                               onClick={() => setIsActive(4)}
                               href={"/blogs"}
@@ -75,8 +76,8 @@ const Header = () => {
                          <Link
                               className={
                                    isActive === 5
-                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm"
-                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm"
+                                        ? "bg-white text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
+                                        : "hover:bg-white hover:text-blue-900 duration-300 px-3 py-2 rounded-sm text-sm xl:text-[16px]"
                               }
                               onClick={() => setIsActive(5)}
                               href={"/contact"}
@@ -84,7 +85,7 @@ const Header = () => {
                               CONTACT
                          </Link>
                     </nav>
-                    <div className="flex items-center gap-4">
+                    <div className="hidden xl:flex items-center gap-4">
                          <FaPhone className="text-2xl" />
                          <div className="flex flex-col">
                               <span>Emergency Call:</span>

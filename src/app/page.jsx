@@ -6,15 +6,15 @@ const Main = () => {
      return (
           <section>
                {/* hero section start  */}
-               <section className="relative h-220 w-full">
+               <section className="relative lg:h-220 h-auto w-full">
                     <Image
                          src={"/doctor.jpg"}
                          alt="hero-doctor"
-                         className="mx-auto h-full brightness-50 -mt-5 rounded-b-4xl object-cover object-top"
+                         className="mx-auto lg:h-full h-150 brightness-50 -mt-5 rounded-b-4xl object-cover lg:object-top object-center"
                          width={1600}
                          height={600}
                     />
-                    <div className="absolute top-40 left-20">
+                    <div className="absolute top-30 left-10 lg:top-40 lg:left-20">
                          <div className="flex items-center w-fit gap-2 bg-white/8 backdrop-blur-sm rounded-md border border-white/10 p-2">
                               <span className="bg-blue-500 p-1 px-2 text-white rounded-sm">
                                    MEDNIX
@@ -24,7 +24,7 @@ const Main = () => {
                               </h2>
                          </div>
                          <div className="mt-10 backdrop-blur-[3px]">
-                              <h1 className="text-[90px] text-white leading-28">
+                              <h1 className="lg:text-[90px] text-5xl text-white lg:leading-28">
                                    Your Trusted <br />
                                    Partner <br />
                                    Health and <br />
@@ -36,15 +36,15 @@ const Main = () => {
                {/* hero section end */}
 
                {/* about section start  */}
-               <section className="h-screen p-20">
+               <section className="h-screen lg:p-20 p-5 my-10 lg:my-0">
                     <div className="flex items-center w-fit pr-3 rounded-full shadow-[inset_2px_2px_5px_black]/30">
                          <span className="animate-pulse">
                               <BsDot className="text-4xl" />
                          </span>
                          <h3 className="text-[15px]">About Mednix</h3>
                     </div>
-                    <section className="grid grid-cols-12 items-center gap-8">
-                         <div className="col-span-7">
+                    <section className="grid grid-cols-12 items-center lg:gap-8">
+                         <div className="xl:col-span-7 col-span-12">
                               <div className="mt-10">
                                    <h1 className="text-blue-950 text-5xl">
                                         Caring for You Like
@@ -61,7 +61,7 @@ const Main = () => {
                                         height={100}
                                         width={1000}
                                    />
-                                   <div className="absolute -top-40 right-0">
+                                   <div className="lg:absolute lg:-top-40 right-0">
                                         <div className="bg-cyan-500 text-white p-5 border-20 rounded-[50px] border-white">
                                              <h1 className="text-3xl mb-5">
                                                   Opening Hours:
@@ -84,8 +84,8 @@ const Main = () => {
                                    </div>
                               </div>
                          </div>
-                         <div className="col-span-5">
-                              <h1 className="text-[250px] font-bold text-transparent leading-50 bg-clip-text bg-[url('/doctor.jpg')] bg-contain bg-left">
+                         <div className="xl:col-span-5 col-span-12 lg:mt-0 mt-20">
+                              <h1 className="lg:text-[250px] text-[200px] md:text-[230px] font-bold text-transparent leading-50 bg-clip-text bg-[url('/doctor.jpg')] bg-contain bg-left">
                                    25+
                               </h1>
                               <div className="flex items-center gap-3 my-5">
@@ -123,7 +123,7 @@ const Main = () => {
                                    needs. At Mednix, your health is our priority
                                    every step of the way.
                               </p>
-                              <div className="flex gap-3 cursor-pointer w-fit mt-5 text-white bg-cyan-500 p-1  rounded-lg items-center">
+                              <div className="flex gap-3 cursor-pointer w-fit my-5 text-white bg-cyan-500 p-1  rounded-lg items-center">
                                    <h2 className="pl-4 text-[16px]">
                                         Appointment
                                    </h2>
@@ -135,7 +135,6 @@ const Main = () => {
                     </section>
                </section>
 
-               <div></div>
                {/* about section end  */}
           </section>
      );
